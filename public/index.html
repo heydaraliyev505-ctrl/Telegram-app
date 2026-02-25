@@ -1,1 +1,43 @@
-j
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satanic App</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Навигация будет внизу -->
+    <main id="content">
+      <h1>Загрузка...</h1>
+    </main>
+
+    <nav class="bottom-nav">
+      <button data-page="home" class="nav-btn active">
+        <img src="assets/home.svg" alt="Главная"/> Главная
+      </button>
+      <button data-page="tasks" class="nav-btn">
+        <img src="assets/tasks.svg" alt="Задания"/> Задания
+      </button>
+      <button data-page="shop" class="nav-btn">
+        <img src="assets/shop.svg" alt="Магазин"/> Магазин
+      </button>
+      <button data-page="friends" class="nav-btn">
+        <img src="assets/friends.svg" alt="Друзья"/> Друзья
+      </button>
+      <button data-page="profile" class="nav-btn">
+        <img src="assets/profile.svg" alt="Профиль"/> Профиль
+      </button>
+    </nav>
+  </div>
+
+  <div id="promo-input" style="display:none; padding:16px; background:#111;">
+    <input type="text" placeholder="Введите промокод" id="promo-code"/>
+    <button id="apply-promo">Применить</button>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
